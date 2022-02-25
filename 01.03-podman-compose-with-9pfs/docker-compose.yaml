@@ -5,4 +5,4 @@ services:
     ports:
       - "8085:80"
     volumes:
-      - /mnt/host/${PWD}:/usr/share/nginx/html:Z
+      - /mnt/host/${PWD}/html:/usr/share/nginx/html

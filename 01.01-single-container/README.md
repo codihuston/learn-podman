@@ -113,7 +113,7 @@ Otherwise, podman will complain that the source directory does not exist.
 # (optional) for macos only
 $ podman machine ssh sudo chown -R core /var/mnt
 $ podman machine ssh sudo chown -R core /mnt
-$ podman machine ssh mkdir -p /mnt/html
+$ podman machine ssh sudo mkdir -p /mnt/html
 # use the podman private key for authentication (port is random, see output
 # above to find it, core@localhost:XXXXX)
 $ PODMAN_MACHINE_PORT=64798
@@ -125,7 +125,8 @@ $ scp -i $PODMAN_MACHINE_PRIVATE_KEY -P $PODMAN_MACHINE_PORT -r html/ core@local
 ```
 
 There does exist a more
-[permanent workaround](#volume-mount-workaround-for-macos)later in this document.
+[permanent workaround](#volume-mount-workaround-for-macos) later in this
+document.
 
 ### Mounting a Volume
 

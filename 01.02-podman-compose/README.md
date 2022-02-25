@@ -10,7 +10,8 @@ uses `podman` under-the-hood.
 
 ## Install
 
-See the [github repo](https://github.com/containers/podman-compose) for installation instructions.
+See the [github repo](https://github.com/containers/podman-compose) for
+installation instructions.
 
 ## Usage
 
@@ -23,4 +24,13 @@ to-be-mounted by the compose file prior to running it. See
 $ podman-compose --help
 $ podman-compose up --help
 $ podman-compose up
+$ curl localhost:8085
+# --- snip ---#
+<h1>Hello World!</h1>
+# --- snip ---#
+$ podman-compose down
 ```
+
+> Note: take care to run `podman-compose down` before re-running a
+> `podman-compose up` command in the future. Otherwise, Podman will complain
+> about an existing service.
