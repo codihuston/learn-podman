@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nginx:
+    image: "nginx"
+    ports:
+      - "8085:80"
+    volumes:
+      - /mnt/host/html:/usr/share/nginx/html:Z
