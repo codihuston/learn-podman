@@ -14,20 +14,20 @@ Features of Podman, similar to Docker:
 4. Support for rootless containers and pods
 5. Commands are mostly 1:1 with Docker for management of containers, mounting
 volumes, etc. Where the CLI differs is with the use of Pods
-1. Can co-exist with Docker on the same host
+6. Supports a `podman-compose` CLI in the same vein as `docker-compose`
+7. Can co-exist with Docker on the same host
 
 Features unique to Podman:
 
 1. Pods for grouping containers
 2. Signing images
-3. Supports the playing of structured data (read: Kubernetes YAML) based on
-containers, pods, or volumes (The `docker-compose` of podman) via
-`podman play kube`
+4. Supports the playing of structured data (read: Kubernetes YAML) based on
+containers, pods, or volumes via `podman play kube`
 
 Nuances of Podman:
 
 1. Daemonless
-1. Based on `libpod`, a library for container lifecycle management for: pods,
+2. Based on `libpod`, a library for container lifecycle management for: pods,
 container-images, and volumes
 1. Uses `Buildah` for building images, uses `Containerfiles` (and supports
 Dockerfiles)
